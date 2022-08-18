@@ -13,7 +13,6 @@ RUN bash /cuda.sh
 
 RUN Rscript -e "update.packages(ask = F)"
 RUN Rscript -e "install.packages('devtools')"
-RUN Rscript -e "devtools::source_url('https://raw.githubusercontent.com/kstawiski/OmicSelector/master/vignettes/setup.R')"
 
 COPY setup.R /
 RUN Rscript /setup.R
