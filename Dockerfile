@@ -1,6 +1,7 @@
 FROM rocker/rstudio
 LABEL maintainer "Konrad Stawiski <konrad@konsta.com.pl>"
 
+ENV DEBIAN_FRONTEND=noninteractive
 ENV ROOT=true
 ENV DISABLE_AUTH=true
 ENV USERID=1000
