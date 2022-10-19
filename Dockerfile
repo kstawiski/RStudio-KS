@@ -7,7 +7,7 @@ ENV DISABLE_AUTH=true
 ENV USERID=1000
 ENV GROUPID=1000
 
-RUN apt update && apt -y dist-upgrade && apt -y install mc autossh libz-dev libxml2-dev libglpk-dev libbz2-dev liblzma-dev libxt6 libmagick++-6.q16-dev
+RUN apt update && apt -y dist-upgrade && apt -y install mc autossh curl libz-dev libxml2-dev libglpk-dev libbz2-dev liblzma-dev libxt6 libmagick++-6.q16-dev
 
 COPY cuda.sh /
 RUN bash /cuda.sh
