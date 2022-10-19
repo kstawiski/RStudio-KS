@@ -79,18 +79,6 @@ if("OmicSelector" %in% rownames(installed.packages()) == FALSE) { remotes::insta
 library(OmicSelector)
 message("OK! OmicSelector is installed correctly!")
 
-
-
-
-
-
-
-
-
-
-
-
-
 BiocManager::install(c("pathfindR","DESeq2","clusterProfiler","tximport","pheatmap","gridExtra","readxl","biomaRt","Rmisc"))
 devtools::install_github("omnideconv/immunedeconv")
 
